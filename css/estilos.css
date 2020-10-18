@@ -1,0 +1,59 @@
+.navbar{
+
+    background-color: rgb(30,10,139);
+    display: block;
+    height: 60px;
+}
+
+.navbar--aboutMe{
+    text-decoration: none;
+    margin-left: 15px;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif,bold;
+    display: inline;
+}
+
+
+.navbar--contactMe{
+    
+    text-decoration: none;
+    margin-left: 180px;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif,bold;
+    display: inline;
+}
+.navbar--experience{
+    
+    text-decoration: none;
+    margin-left: 180px;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif,bold;
+    display: inline;
+}
+
+
+
+.hero{
+    width:90%;
+    margin: auto;
+}
+
+.hero ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+}
+
+.hero li{
+    list-style: none;
+    width: 800px;
+}
+
+.hero img{
+    width: 800px;
+    height: 400px;
+    margin-left: -62px;
+}
