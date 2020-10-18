@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="iconos.css">
     <script src="Chart.js"></script>
+    <script src="javascript.js"></script>
     <title>Portafolio Rommel Sanzonetti</title>
 </head>
 <body>
     
     <div class="navbar">
         
-        <a href="" class="navbar--aboutMe">AboutMe</a>
-        <a href="" class="navbar--contactMe">ContactMe</a>
-        <a href="" class="navbar--experience">Experience</a>
-        <a href="" class="navbar--experience">Skills</a>
-        <a href="" class="navbar--experience">Contact Me</a>
+        <a href="#aboutMe" class="navbar--aboutMe">AboutMe</a>
+        <a href="#experience" class="navbar--experience">Experience</a>
+        <a href="#skills" class="navbar--skills">Skills</a>
+        <a href="#contactMe" class="navbar--ContactMe">Contact Me</a>
 
     </div>
 
@@ -31,7 +31,7 @@
     </div>
 
 
-    <div class="aboutMe">
+    <div id="aboutMe">
         <p id="acercademi">ABOUT ME...</p>
         <div class="aboutMe--imagenes">
             <ul>
@@ -54,7 +54,7 @@
     </div>
 
 
-    <div class="experience">
+    <div id="experience">
         <div class="experience--title--box">
             <p id="experience--title--box--name">Personal Projects</p>
         </div>
@@ -103,7 +103,7 @@
 
     </div>
 
-    <div class="skills">
+    <div id="skills">
 
         <div class="skills--boxtitulo">
             <p id="titleskills">Skills</p>
@@ -138,95 +138,21 @@
     </div>
 
     <!-- javascript -->
-    <style type="text/css">
-    
-        
-        
-    </style>
     
     
-    <script>
     
-        function validar(valor) {
-            if (valor.value == "") {
-                valor.className = 'error';
-            } else {
-                valor.className = 'campos';
-            }
-        }
-        function validar_Numeros(valor) {
-            if (valor.value == "") {
-                valor.className = 'error';
-            } else {
-                if (isNaN(valor.value)) {
-                    valor.className = 'error';
-                    valor.value = "";
     
-                } else {
-                    valor.className = 'campos';
-                }
-            }
-        }
 
-        function longitud(valor, minimo) {
-
-                var h=true;
-                if (valor.length < minimo) {
-                    valor.className = "error";
-                    
-                    return false;
-                } else {
-                    
-                    valor.className = 'campos';
-                    return true;
-                }
-
-
-            }
-
-        function todo_correcto(f) {
-
-                var ok = true;
-                msg = "Debes escribir contenido en los campos: \n";
-                // alert(msg+'\n' +f.elements[0].id+ '\n'+ f.elements[1].id +'\n' + f.elements[2].id+'\n' + '\n');
-
-                // alert(f.elements[1].value);
-                // alert(f.elements[2].value);
-                // alert(f.elements[3].value);
-                
-                
-                for (i = 0; i < f.length-1; i++) {
-                    // alert('i');
-                    if (((longitud(f.elements[i].value, 3)) == false)) {
-                        msg += f.elements[i].id;
-                        ok = false;
-                        break;
-                    }
-
-                }
-                if (ok == false) {
-                    alert(msg);
-                    
-                    return false;
-                }
-                alert('Formulario enviado')
-                return true;
-            }
-
-    </script>
-
-</script> 
-
-<div class="contactMe">
+<div id="contactMe">
     
     <div class="contactMe--boxtitulo">
         <p>Contact Me</p>
     </div>
     <div class="contactMe--barbox">
         <ul>
-            <li> <a href="http://www." class="icon-whatsapp">Whatsapp</a> </li>
-            <li> <a href="" class="icon-instagram">Instagram</a> </li>
-            <li> <a href="" class="icon-mail">Correo</a> </li>               
+            <li> <a href="https://api.whatsapp.com/send?phone=584241280645&text=hola%20contactame" class="icon-whatsapp">Whatsapp</a> </li>
+            <li> <a href="https://www.instagram.com/" class="icon-instagram">Instagram</a> </li>
+            <li> <a href="https://www.google.com/intl/es-419/gmail/about/" class="icon-mail">Correo</a> </li>               
         </ul>
     </div>
     <div class="contactMe--infobox">
@@ -256,3 +182,7 @@
 
 </body>
 </html>
+
+
+
+
