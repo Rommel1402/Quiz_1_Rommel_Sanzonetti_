@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="iconos.css">
     <script src="Chart.js"></script>
     <title>Portafolio Rommel Sanzonetti</title>
 </head>
@@ -14,16 +15,18 @@
         <a href="" class="navbar--aboutMe">AboutMe</a>
         <a href="" class="navbar--contactMe">ContactMe</a>
         <a href="" class="navbar--experience">Experience</a>
+        <a href="" class="navbar--experience">Skills</a>
+        <a href="" class="navbar--experience">Contact Me</a>
 
     </div>
 
     <div class="hero">
 
         <ul class="hero--ul">
-            <li class="hero--ul--imagen1"> <img src="https://ticnegocios.camaravalencia.com/wp-content/uploads/2017/09/machine-learning-espana.jpg" alt=> </li>
-            <li class="hero--ul--imagen2"><img src="https://www.profesionalreview.com/wp-content/uploads/2019/08/Deep-Learning-4-1280x720.jpeg" alt=></li>
-            <li class="hero--ul--imagen3"> <img src="https://ticnegocios.camaravalencia.com/wp-content/uploads/2017/09/machine-learning-espana.jpg" alt=> </li>
-            <li class="hero--ul--imagen4"><img src="https://www.profesionalreview.com/wp-content/uploads/2019/08/Deep-Learning-4-1280x720.jpeg" alt=></li>
+            <li class="hero--ul--imagen1"> <img src="https://img.freepik.com/foto-gratis/plantilla-papeleo-blanco-disenadores-maqueta-diseno-reactivo-fondo-madera-vendimia-papel-membrete-taza-cafe-smartphone-lapiz-auriculares-sobre-fondo-madera-mesa-vista-superior_1205-1639.jpg?size=626&ext=jpg" alt=> </li>
+            <li class="hero--ul--imagen2"><img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg" alt=></li>
+            <li class="hero--ul--imagen3"> <img src="https://miro.medium.com/max/1200/0*rAtYQOuH6YghW1Mp.png" alt=> </li>
+            <li class="hero--ul--imagen4"><img src="https://cdn-3.expansion.mx/dims4/default/2254898/2147483647/strip/true/crop/1254x836+0+0/resize/800x533!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff7%2F18%2F3f3e06c248f08d070cf21beaac6d%2Fistock-171591693.jpg" alt=></li>
         </ul>
     </div>
 
@@ -42,6 +45,11 @@
         <div class="aboutMe--informacion">
             <p>Soy Rommel Jesus Sanzonetti Gudinio, naci el 14 de febrero del 2001 en Caracas. Actualmente estudio ingenieria en sistemas en la 
                 Universidad Metropolitana de Caracas, donde ademas soy preparador de la asignatura algoritmos y programacion.</p>
+
+            <p>Entre mis objetivos a corto plazo planteo obtener conocimientos con aquello relacionado al desarrollo de software y aprender usar las herramientas utilizadas en las mismas.</p>
+            <p>Entre mis objetivos a largo plazo estan obtener mi titulo de ingeniero de sistemas en la universidad metropolitana y obtener certificados relacionados con desarrollo de software y deep learning.</p>
+            <p>Mis gustos y motivaciones reside en aprender y autoeducarme aquello relacionado a mi carrera de estudio, compartir con mi familia, amigos y hacer deporte.</p>
+
         </div>
     </div>
 
@@ -124,12 +132,126 @@
             });
         </script>
 
+        
+
 
     </div>
 
+    <!-- javascript -->
+    <style type="text/css">
+    
+        
+        
+    </style>
+    
+    
+    <script>
+    
+        function validar(valor) {
+            if (valor.value == "") {
+                valor.className = 'error';
+            } else {
+                valor.className = 'campos';
+            }
+        }
+        function validar_Numeros(valor) {
+            if (valor.value == "") {
+                valor.className = 'error';
+            } else {
+                if (isNaN(valor.value)) {
+                    valor.className = 'error';
+                    valor.value = "";
+    
+                } else {
+                    valor.className = 'campos';
+                }
+            }
+        }
+
+        function longitud(valor, minimo) {
+
+                var h=true;
+                if (valor.length < minimo) {
+                    valor.className = "error";
+                    
+                    return false;
+                } else {
+                    
+                    valor.className = 'campos';
+                    return true;
+                }
 
 
+            }
 
+        function todo_correcto(f) {
+
+                var ok = true;
+                msg = "Debes escribir contenido en los campos: \n";
+                // alert(msg+'\n' +f.elements[0].id+ '\n'+ f.elements[1].id +'\n' + f.elements[2].id+'\n' + '\n');
+
+                // alert(f.elements[1].value);
+                // alert(f.elements[2].value);
+                // alert(f.elements[3].value);
+                
+                
+                for (i = 0; i < f.length-1; i++) {
+                    // alert('i');
+                    if (((longitud(f.elements[i].value, 3)) == false)) {
+                        msg += f.elements[i].id;
+                        ok = false;
+                        break;
+                    }
+
+                }
+                if (ok == false) {
+                    alert(msg);
+                    
+                    return false;
+                }
+                alert('Formulario enviado')
+                return true;
+            }
+
+    </script>
+
+</script> 
+
+<div class="contactMe">
+    
+    <div class="contactMe--boxtitulo">
+        <p>Contact Me</p>
+    </div>
+    <div class="contactMe--barbox">
+        <ul>
+            <li> <a href="http://www." class="icon-whatsapp">Whatsapp</a> </li>
+            <li> <a href="" class="icon-instagram">Instagram</a> </li>
+            <li> <a href="" class="icon-mail">Correo</a> </li>               
+        </ul>
+    </div>
+    <div class="contactMe--infobox">
+        <ul>
+            <li> <p> +58 4241280645      </p> </li>
+            <li> <p>rommel.sanzonetti7     </p> </li>
+            <li> <p>rommel.sanzonetti@gmail.com</p> </li>
+        </ul>
+    </div>
+    <center>
+        <form id="formulario" method="get" onsubmit="return todo_correcto(this);">
+        
+            <input id="nombre" type="text" onblur="validar(this)" ; class="campos" placeholder="Nombre..."> </input>
+            <br>
+            <input id="correo" type="email" require onblur="validar(this)" ; class="campos" placeholder="Correo..."> </input>
+            <br>
+            <input id="mensaje" type="text" onblur="validar(this)" ; class="campos" placeholder="Mensaje..."> </input>
+            <br>
+            <input type="submit"> </input>
+        </form>
+            
+        
+    </center>
+
+</div>
 
 
 </body>

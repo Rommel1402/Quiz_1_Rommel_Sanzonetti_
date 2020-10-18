@@ -22,16 +22,17 @@ body{
 .navbar--contactMe{
     
     text-decoration: none;
-    margin-left: 180px;
+    margin-left: 60px;
     color: white;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif,bold;
     display: inline;
 }
+
 .navbar--experience{
     
     text-decoration: none;
-    margin-left: 180px;
+    margin-left: 60px;
     color: white;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif,bold;
@@ -292,3 +293,93 @@ body{
 }
 
 
+.contactMe{
+    margin-top: 60px;
+    background-color: rgb(236, 219, 118);
+    border:red 5px solid;
+    height: 1390px;
+    
+}
+
+.contactMe--boxtitulo{
+    text-align: center;
+    font-size: 44px;
+    font-family: Arial, Helvetica, sans-serif,bold;    
+
+}
+center{
+
+    margin-top: 50px;
+
+}
+
+.campos{    
+    background: #fff;
+    color: #000;
+    border: 1px solid #6e6e6e;
+    height: 50px;
+    width: 250px;
+}
+
+.error{
+
+    background:orange;
+    color: #000;
+    border: 1px solid red;
+    height: 50px;
+    
+    width: 250px;
+}
+
+
+
+.contactMe--barbox{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contactMe--barbox{
+
+}
+
+.contactMe--barbox ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left:380px ;
+}
+
+.contactMe--barbox ul li a{
+
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration:none;
+}
+
+.contactMe--barbox ul li .icon-whatsapp{
+    background: green ;
+}
+
+.contactMe--barbox ul li .icon-instagram{
+    background:purple;
+}
+
+.contactMe--barbox ul li .icon-mail{
+    background: #666666;
+}
+
+
+.contactMe--infobox ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left:290px ;
+
+}
+
+.contactMe--infobox p{
+    margin-left: 15px;
+}
