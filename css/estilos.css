@@ -37,23 +37,45 @@
 
 
 .hero{
-    width:90%;
+    width:100%;
     margin: auto;
+    overflow: hidden;
 }
 
 .hero ul{
     padding: 0;
     display: flex;
     width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
 }
 
 .hero li{
     list-style: none;
-    width: 800px;
+    width: 1500px;
 }
 
 .hero img{
-    width: 800px;
-    height: 400px;
-    margin-left: -62px;
+    
+    width: 80%;
+    height: 500px;
+    margin-left: 100px;
+}
+
+@keyframes cambio{
+
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left:-100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left:-200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left:-300%;}
+    
+
 }
