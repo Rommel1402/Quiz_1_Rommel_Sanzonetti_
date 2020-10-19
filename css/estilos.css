@@ -99,7 +99,11 @@ body{
     70% {margin-left:-200%;}
     
     75% {margin-left: -300%;}
+    90% {margin-left:-300%;}
+    
+    95% {margin-left: -300%;}
     100% {margin-left:-300%;}
+    
     
 
 }
@@ -118,7 +122,7 @@ body{
 
 #aboutMe{
 
-    height: 550px;
+    height: 800px;
     /* background-color:  rgb(236, 219, 118);; */
     background-image: url('https://unedliberia.files.wordpress.com/2011/06/wallpaper-abstracto-27-761852.jpg');
 }
@@ -133,7 +137,7 @@ body{
     padding: 0;
     display: flex;
     width: 400%;
-    animation: cambio 20s infinite;
+    animation: cambio 30s infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in;
 }
@@ -146,9 +150,9 @@ body{
 
 #aboutMe img{
     
-    width: 20%;
-    height: 300px;
-    margin-left: 500px;
+    width: 60%;
+    height: 500px;
+    margin-left: 350px;
 }
 
 .aboutMe--informacion{
